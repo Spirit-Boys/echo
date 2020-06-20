@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				subpages: [{
+					url: 'home.html',
+					id: 'home.html',
+					styles: {
+						top: "0px",
+						bottom: "50px",
+					},
+					extras: {}
+				}]
+			});
+			mui.plusReady(function() {
+				document.getElementById("home").addEventListener("tap", function() {
+					mui.openWindow({
+						url: 'home.html',
+						id: 'home.html',
+						styles: {
+							top: '0px',
+							bottom: '50px',
+						},
+						extras: {},
+						show: {}
+					})
+				})
+				document.getElementById("hall").addEventListener("tap", function() {
+					mui.openWindow({
+						url: 'hall.html',
+						id: 'hall.html',
+						styles: {
+							top: '0px',
+							bottom: '50px',
+						},
+						extras: {},
+						show: {}
+					})
+				})
+				document.getElementById("dynamique").addEventListener("tap", function() {
+					mui.openWindow({
+						url: 'dynamique.html',
+						id: 'dynamique.html',
+						styles: {
+							top: '0px',
+							bottom: '50px',
+						},
+						extras: {},
+						show: {}
+					})
+				})
+				document.getElementById("center").addEventListener("tap", function() {
+					mui.openWindow({
+						url: 'center.html',
+						id: 'center.html',
+						styles: {
+							top: '0px',
+							bottom: '50px',
+						},
+						extras: {},
+						show: {}
+					})
+				})
+			})
+			function settap(id) {
+				mui("nav a").each(function() {
+					if (this.id == id) {
+						this.classList.add("mui-active");
+					} else {
+						this.classList.remove("mui-active");
+					}
+				})
+			}
+		</script>
+		<style>
+			.mui-row img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.mui-active {
+				color: #22d59d !important;
+			}
+		</style>
+	</head>
+	<body>
+		<footer>
+			<nav class="mui-bar mui-bar-tab">
+				<a id="hall" class="mui-tab-item" href="hall.html">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-custom"></span>
+					<span class="mui-tab-label">音乐馆</span>
+				</a>
+				<a id="home" class="mui-tab-item mui-active" href="homepage.html">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">主页</span>
+				</a>
+				<a id="dynamique" class="mui-tab-item" href="dynamique.html">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-find"></span>
+					<span class="mui-tab-label">动态</span>
+				</a>
+				<a id="center" class="mui-tab-item" href="center.html">
+					<span class="mui-icon mui-icon-person-filled"></span>
+					<span class="mui-tab-label">个人中心</span>
+				</a>
+			</nav>
+		</footer>
+	</body>
+	<script>
+	</script>
+</html>
