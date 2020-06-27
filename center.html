@@ -1,18 +1,140 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<style type="text/css">
+			.img{
+				top: 50px;
+				position: absolute;
+				left: 4px;
+			}
+			.mui{
+				width: 360px;
+				text-align: center;
+				top: 180px;
+				position: absolute;
+			}
+			.gedan{
+				color: #000000;
+				top: 280px;
+				position: absolute;
+				left: 20px;
+			}
+			.jiahao{
+				width: 30px;
+				top: 280px;
+				position: absolute;
+				left: 320px;
+			}
+			.mui-table-view{
+				width: 330px;
+				top: 320px;
+				position: absolute;
+				left: 15px;
+			}
+			.footer{
+				width: 100%;
+				position: fixed;
+				bottom: -8px;
+				left: 0;
+			}
+			.footer .f-box{
+				padding: 5px 0;
+				margin: 10px 2px;
+				border: 1px solid #eeeeee;
+				background-color: #fff;
+				position: relative;
+			}
+			.footer .f-box .iconfont{
+				font-size: 30px;
+			}
+			.footer img{
+				position: absolute;
+				bottom:-38px;
+				width: 50px;
+				border-radius: 50%;
+			}
+		</style>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
 	</head>
-
+	<header id="header" class="mui-bar mui-bar-nav">
+		<a class="mui-icon mui-pull-left" style="color: #000000;">我的</a>
+		<div class="mui-input-row mui-title mui-search" style="width: 200px;">
+			<input type="search" class="mui-input-clear" placeholder="搜索">
+		</div>
+		<a class="mui-icon mui-icon-bars mui-pull-right" style="color: gainsboro"></a>
+	</header>
+	<img class="img" src="imgs/yonghu.png" onclick="window.location.href='hyzx.html';"/>
+	<div class="mui">
+		<div class="mui-row">
+			<div class="mui-col-xs-3 mui-col-sm-3" onclick="window.location.href='xh.html';"><img src="imgs/xihuan.png" style="width: 60px;"/></br>喜欢</div>
+			<div class="mui-col-xs-3 mui-col-sm-3"><img src="imgs/lishi.png" style="width: 60px;"/></br>最近播放</div>
+			<div class="mui-col-xs-3 mui-col-sm-3"><img src="imgs/xiazai.png" style="width: 60px;" /></br>本地音乐</div>
+			<div class="mui-col-xs-3 mui-col-sm-3" onclick="window.location.href='ygyy.html'"><img src="imgs/yigoumai.png" style="width: 60px;"/></br>已购音乐</div>
+		</div>
+	</div>
+	<h4 class="gedan">歌单</h4>
+	<img class="jiahao" src="imgs/jiahao.png" >
+	<ul class="mui-table-view mui-table-view-chevron">
+		<li class="mui-table-view-cell mui-media">
+			<a class="mui-navigate-right">
+				<img class="mui-media-object mui-pull-left" src="imgs/Alan%20Walker%20_%20Iselin%20Solheim_Faded_4.jpg">
+				<div class="mui-media-body">
+					Alan
+					<p class='mui-ellipsis'>5首</p>
+				</div>
+			</a>
+		</li>
+		<li id="lironghao" class="mui-table-view-cell mui-media">
+			<a class='mui-navigate-right' href="javascript:;">
+				<img class="mui-media-object mui-pull-left" src="imgs/lironghao_erduo_4.jpg">
+				<div class="mui-media-body">
+					李荣浩
+					<p class='mui-ellipsis'>8首</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a class="mui-navigate-right">
+				<img class="mui-media-object mui-pull-left" src="imgs/erge_shaoererge_4.jpg">
+				<div class="mui-media-body">
+					儿歌
+					<p class='mui-ellipsis'>19首</p>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a class="mui-navigate-right">
+				<img class="mui-media-object mui-pull-left" src="imgs/the_chainsmokers_coldplay_something_just_likethis_4.jpg">
+				<div class="mui-media-body">
+					Something
+					<p class='mui-ellipsis'>1首</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="footer" onclick="window.location.href='bf.html'">
+	    <div class="mui-row f-box">
+	        <div class="mui-col-sm-2 mui-col-xs-2">
+	    		<img src="images/15.jpg"/>
+	        </div>
+	        <div class="mui-col-sm-8 mui-col-xs-8 bf-z-img">
+	        	<p>虚拟 - 陈粒</p>
+	        </div>
+	        <div class="mui-col-sm-2 mui-col-xs-2 bf-z-img">
+	        	<i class="iconfont el-icon-w-bofang"></i>
+	    	</div>
+	    </div>
+	</div>
 	<body>
 		<script src="js/mui.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init({
+				swipeBack:true
+			});
 		</script>
 	</body>
-
 </html>

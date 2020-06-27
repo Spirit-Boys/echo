@@ -1,0 +1,112 @@
+body,p,div,ul,li,a{
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.mui-bar-nav {
+    top: 0;
+    -webkit-box-shadow: 0 0px 0px #ccc;
+    box-shadow: 0 0px 0px #ccc;
+}
+
+
+.singer-content{
+	background-color: #fff;
+	padding: 20px;
+}
+.singer-content p.name{
+	font-size: 18px;
+}
+.singer-content p{
+	margin-bottom: 10px;
+}
+.bf-z-img{
+	padding: 5px;
+	box-sizing: border-box;
+}
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+}
+.footer .f-box{
+	padding: 5px 0;
+	margin: 10px 2px;
+	border: 1px solid #eeeeee;
+	background-color: #fff;
+	position: relative;
+}
+.footer .f-box .iconfont{
+	font-size: 30px;
+}
+.footer img{
+	position: absolute;
+	bottom:-38px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+/*每日推荐*/
+.mui-bar-nav{
+	background-color: #fff;
+}
+.mui-bar-nav .iconfont{
+	font-size: 26px;
+	margin-top: 10px;
+}
+/*播放全部*/
+.mui-content{
+	background-color: #fff !important;
+}
+.playAll{
+	background-color: #fff;
+	font-size: 18px;
+	margin: 15px;
+}
+.playAll i{
+	color: #AAAAAA;
+	font-size: 28px;
+	margin: 0 5px 0 15px;
+}
+.mr-row{
+	margin: 15px 0;
+}
+.mr-row p:first-child{
+	font-size: 16px;
+}
+.mr-row p{
+	font-size: 16px;
+}
+.mr-row .music-name{
+	font-size: 15px !important;
+}
+.mr-row i{
+	position: absolute;
+	top: 8px;
+	color: #AAAAAA;
+	font-size: 32px;
+	padding-right: 15px;
+}
+
+/*保存封面*/
+.fm-content{
+	text-align: center;
+}
+.fm-title{
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+/*文字盒子*/
+.txt-box{
+	border: 1px solid #AAAAAA;
+	padding: 10px;
+	border-radius: 5px;
+	width: 90%;
+	margin: 10px auto;
+}
+.txt-box p{
+	margin: 10px;
+}

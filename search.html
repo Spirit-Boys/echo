@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=750px,user-scalable=no">
+		<style type="text/css">
+			.html,body{
+				background-color: #F3F3F3;
+				overflow-x: hidden;
+				margin-bottom: 75px;
+			}
+			.content{
+				width: 100%;
+			}
+			.header{
+				width: 100%;
+				padding: 0 20px;
+				margin-top: 20px;
+				box-sizing: border-box;
+			}
+			.header>a>img{
+				width: 42px;
+				height: 42px;
+				vertical-align: middle;	
+			}
+			.header>.search{
+				display: inline-block;
+				position: relative;
+				width:80%;
+				height: 52px;
+				line-height: 52px;
+				margin-left: 20px;
+				border: 1px solid #9C9C9C;
+			}
+			.search>input{
+				outline: none;
+				width: 100%;
+				height: 100%;
+				padding-left:68px;
+				box-sizing: border-box;
+				font-size: 20px;
+				color: #303030;	
+				border: none;
+			}
+			.search>img{
+				position: absolute;
+				width: 45px;
+				height: 45px;
+				left: 6px;
+				top: 4px;
+			}
+			.hot{
+				width: 100%;
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+			.hot h2{
+				display: inline-block;
+				font-size: 24px;
+				color: #2D2D2D;
+			}
+			.hot a{
+				text-decoration: none;
+				padding:2px 5px;
+				box-sizing: border-box;
+				background-color: #32FF98;
+				border:1px solid #5E9774;
+				display: inline-block;
+				margin-left: 20px;
+			}
+			/* .hot a img{
+				width: 20px;
+				height: 20px;
+			} */
+			.hot strong{
+				font-size: 24px;
+				color: #C2D4C8;
+			}
+			.hot b{
+				font-size: 24px;
+				color: #5C6962;
+				font-weight: normal;
+			}
+			.list{
+				width: 100%;
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+			.list ol{
+				width: 100%;
+				margin: 0;
+				font-size: 50px;
+			}
+			.list ol:after{/* 清浮动 */
+				content: "";
+				display: block;
+				height: 0;
+				clear:both;
+				visibility: hidden;
+			}
+			
+			.list li{
+				width: 100%;
+			}
+			.list li:after{/* 清浮动 */
+				content: "";
+				display: block;
+				height: 0;
+				clear:both;
+				visibility: hidden;
+			}
+			.list li:marker{
+				color: #32FF98 !important;
+			}
+			.list li:nth-of-type(1),.list li:nth-of-type(2),.list li:nth-of-type(3){
+				content: "";
+				color: red;
+			} 
+			.list li div{
+				width: 50%;
+				float: left;
+			}
+			.left h3{
+				font-size: 24px;
+				color: #2D2D2D;
+			}
+			.left p{
+				font-size: 20px;
+				color: #2D2D2D;
+			}
+			.right{
+				font-size: 24px;
+				color: #949494;
+				vertical-align: middle;
+				margin-top: 38px;
+				text-align: right;
+				padding-right: 20px;
+				box-sizing: border-box;
+			}
+			.play{
+				  width: 100%;
+				  height: 75px;
+				  line-height: 75px;
+				  background-color: #FFFFFF;
+				  position: fixed;
+				  left: 0;
+				  bottom: 0;
+				  border-top: 1px solid #9C9C9C;
+				  box-sizing: border-box;
+				  z-index: 999;
+				  padding: 0 20px;
+			  }
+			  .play img:nth-of-type(1){
+				  width: 65px;
+				  height: 65px;
+				  border-radius: 50%;
+				  position: absolute;
+				  left: 20px;
+				  top: -25px;
+			  }
+			  .play p{
+				  display: inline-block;
+				  font-size: 24px;
+				  color: #2D2D2D;
+				  margin: 0;
+				  margin-left: 120px;
+			  }
+			  .play img:nth-of-type(2){
+			  	  width: 40px;
+			  	  height: 40px;
+			  	  border-radius: 50%;
+				  float: right;
+				  margin-top: 20px;
+				  margin-right: 50px;
+			  }
+			  
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="header">
+				<!-- 跳转地址写在下方href="" -->
+				<a href="javascript:history.back(-1)"><img src="img/FH.png" ></a>
+				<div class="search">
+					<input type="text" />
+					<img src="img/ss.png" >
+				</div>
+			</div>
+			<div class="hot">
+				<h2>热门搜索</h2>
+				<a href="javascript:void(0);">
+					<!-- <img src="img/stop.jpg" > -->
+					<strong>▶</strong>
+					<b>播放</b>
+				</a>
+			</div>
+			<div class="list">
+				<ol>
+					<li>
+						<div class="left">
+							<h3>周杰伦新歌</h3>
+							<p>来一杯周杰伦特调mijioto!</p>
+						</div>
+						<div class="right">
+							20416739
+						</div>
+					</li>
+					<li>
+						<div class="left">
+							<h3>周杰伦新歌</h3>
+							<p>来一杯周杰伦特调mijioto!</p>
+						</div>
+						<div class="right">
+							20416739
+						</div>
+					</li>
+					<li>
+						<div class="left">
+							<h3>周杰伦新歌</h3>
+							<p>来一杯周杰伦特调mijioto!</p>
+						</div>
+						<div class="right">
+							20416739
+						</div>
+					</li>
+					<li>
+						<div class="left">
+							<h3>周杰伦新歌</h3>
+							<p>来一杯周杰伦特调mijioto!</p>
+						</div>
+						<div class="right">
+							20416739
+						</div>
+					</li>
+					<li>
+						<div class="left">
+							<h3>周杰伦新歌</h3>
+							<p>来一杯周杰伦特调mijioto!</p>
+						</div>
+						<div class="right">
+							20416739
+						</div>
+					</li>
+					
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>

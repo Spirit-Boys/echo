@@ -1,0 +1,99 @@
+body,p,div,ul,li,a{
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.center{
+	text-align: center;
+}
+.left{
+	text-align: left;
+}
+.mui-bar-nav{
+	background-color: #FFFFFF;
+	box-shadow: 0 0px 0px #ccc
+}
+
+.b40{
+	margin-bottom: 40px;
+}
+.bf-content{
+	background-color: #FFFFFF;
+	height: 100%;
+}
+.bf-content .bf-list{
+	text-align: center;
+}
+.bf-content .bf-list p{
+	background-color: #EEEEEE;
+	padding: 8px 15px;
+	margin: 3px 5px;
+	box-sizing: border-box;
+}
+.bf-content .bf-z-img img{
+	width: 100%;
+}
+.bf-z-img{
+	padding: 5px;
+	box-sizing: border-box;
+}
+.bf-content .bf-z-img .p1{
+	font-size: 13px;
+}
+.bf-content .bf-z-img .p2{
+	font-size: 6px;
+}
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+}
+.footer .f-box{
+	padding: 5px 0;
+	margin: 10px 2px;
+	border: 1px solid #eeeeee;
+	background-color: #fff;
+	position: relative;
+}
+.footer .f-box .iconfont{
+	font-size: 30px;
+}
+.footer img{
+	position: absolute;
+	bottom:-38px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+/*歌手*/
+.top-img img{
+	width: 100%;
+}
+.gs-row{
+	padding-bottom: 10px;
+}
+.gs-row img{
+	margin-left: 10px;
+	width: 80px;
+	border-radius: 50%;	
+}
+.gs-row p{
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+/*ph*/
+.ph-row{
+	padding-left: 10px;
+}
+.ph-row img{
+	width: 100%;
+	margin-right: 20px;
+}
+.ph-row p{
+	font-size: 12px;
+	color:#797979;
+	margin: 5px;
+}

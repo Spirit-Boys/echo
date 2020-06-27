@@ -6,13 +6,111 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<style type="text/css">
+			.mui-card{
+				top:40px;
+			}
+			.touxiang{
+				border-radius: 50%;
+			}
+			.footer{
+				width: 100%;
+				position: fixed;
+				bottom: -8px;
+				left: 0;
+			}
+			.footer .f-box{
+				padding: 5px 0;
+				margin: 10px 2px;
+				border: 1px solid #eeeeee;
+				background-color: #fff;
+				position: relative;
+			}
+			.footer .f-box .iconfont{
+				font-size: 30px;
+			}
+			.footer img{
+				position: absolute;
+				bottom:-38px;
+				width: 50px;
+				border-radius: 50%;
+			}
+		</style>
 	</head>
-
+	<header id="header" class="mui-bar mui-bar-nav">
+		<a class="mui-icon mui-pull-left" style="color: #000000;"><small>精选</small></a>
+		<a class="mui-icon mui-pull-left" style="color: #000000;">&nbsp;<u>关注</u></a>
+		<div class="mui-input-row mui-title mui-search" style="width: 150px;">
+			<input type="search" class="mui-input-clear" placeholder="搜索">
+		</div>
+		<a class="mui-icon mui-icon-bars mui-pull-right" style="color: gainsboro"></a>
+	</header>
+	<div class="mui-card">
+		<div class="mui-card-header mui-card-media">
+			<img class="touxiang" src="imgs/lol/5.jpg" />
+			<div class="mui-media-body">
+				星辰大海
+			</div>
+			<h5 style="color: #000000;line-height: 20px;">&nbsp;&nbsp;&nbsp;有《夏天的风》《愿你余生漫长》《微微》等近期热歌大串烧</h5>
+		</div>
+		<div class="mui-card-content" >
+			<img src="imgs/xiatian.png" alt="" width="100%"/>
+		</div>
+	</div>
+	<div class="mui-card">
+		<div class="mui-card-header mui-card-media">
+			<img class="touxiang" src="imgs/lol/8.jpg" />
+			<div class="mui-media-body">
+				寻找歌曲
+			</div>
+			<h5 style="color: #000000;line-height: 20px;">&nbsp;&nbsp;&nbsp;<span style="color: #22d59d;">#每周视频精选#</span>盘点周杰伦最传唱的11首歌曲，90后最熟悉的旋律，你最喜欢哪一首。。。</h5>
+		</div>
+		<div class="mui-card-content" >
+			<img src="imgs/zhoujielun.png" alt="" width="100%"/>
+		</div>
+	</div>
+	<div class="mui-card" onclick="window.location.href='something.html';">
+		<div class="mui-card-header mui-card-media">
+			<img class="touxiang" src="imgs/lol/15.jpg" />
+			<div class="mui-media-body">
+				每日一歌
+			</div>
+			<h5 style="color: #000000;line-height: 20px;">&nbsp;&nbsp;&nbsp;<span style="color: #22d59d;">#美国篮球联赛宣传片主题曲#</span>《Something Just Like This》MV欣赏</h5>
+		</div>
+		<div class="mui-card-content" >
+			<img src="imgs/something.png" alt="" width="100%"/>
+		</div>
+	</div>
+	<div class="mui-card" onclick="window.location.href='maque.html';">
+		<div class="mui-card-header mui-card-media">
+			<img class="touxiang" src="imgs/lol/20.jpg" />
+			<div class="mui-media-body">
+				最爱李荣浩
+			</div>
+			<h5 style="color: #000000;line-height: 20px;">&nbsp;&nbsp;&nbsp;<span style="color: #22d59d;">#李荣浩#</span>李荣浩最热歌曲《麻雀》</h5>
+		</div>
+		<div class="mui-card-content" >
+			<img src="imgs/maque.png" alt="" width="100%"/>
+		</div>
+	</div>
+	<div class="footer" onclick="window.location.href='bf.html'">
+	    <div class="mui-row f-box">
+	        <div class="mui-col-sm-2 mui-col-xs-2">
+	    		<img src="images/15.jpg"/>
+	        </div>
+	        <div class="mui-col-sm-8 mui-col-xs-8 bf-z-img">
+	        	<p>虚拟 - 陈粒</p>
+	        </div>
+	        <div class="mui-col-sm-2 mui-col-xs-2 bf-z-img">
+	        	<i class="iconfont el-icon-w-bofang"></i>
+	    	</div>
+	    </div>
+	</div>
 	<body>
 		<script src="js/mui.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>
 	</body>
-
 </html>

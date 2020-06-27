@@ -1,18 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
+		<!-- 利用meta标签，将视图宽度定位了750px，固定值，也就是ios6的标准，然后css也是基于750px的设计稿进行布局
+		优点：前端开发十分快速，都是死值 -->
+		<meta name="viewport" content="width=750px,user-scalable=no">
+		<style type="text/css">
+			.html,
+			body {
+				background-color: #F3F3F3;
+				margin-bottom: 95px;
+			}
+
+			.content {
+				width: 100%;
+				background-color: #F3F3F3;
+			}
+
+			.header {
+				width: 100%;
+				text-align: center;
+			}
+
+			.header>h2 {
+				font-size: 24px;
+				color: #000000;
+				display: inline-block;
+			}
+
+			.header>.search {
+				display: inline-block;
+				position: relative;
+				width: 225px;
+				height: 32px;
+				line-height: 32px;
+				margin-left: 20px;
+				border: 1px solid #9C9C9C;
+			}
+
+			.search>input {
+				outline: none;
+				width: 100%;
+				height: 100%;
+				padding-left: 28px;
+				box-sizing: border-box;
+				font-size: 18px;
+				color: #303030;
+				border: none;
+			}
+
+			.search>img {
+				position: absolute;
+				width: 26px;
+				height: 26px;
+				left: 6px;
+				top: 4px;
+			}
+
+			h1 {
+				font-size: 24px;
+				color: #000;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.center,
+			.swiper-container,
+			.swiper-wrapper {
+				width: 100%;
+			}
+
+			.swiper-slide {
+				width: 33%;
+				padding: 0 15px;
+				box-sizing: border-box;
+			}
+
+			.swiper-slide>.imgs {
+				width: 100%;
+				height: 200px;
+				position: relative;
+			}
+
+			.swiper-slide>.imgs>img {
+				width: 100%;
+				height: 200px;
+			}
+
+			.swiper-slide>.imgs>b {
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				display: inline-block;
+				width: 100%;
+				font-weight: normal;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+			}
+
+			.swiper-slide>p {
+				font-size: 24px;
+				color: #303030;
+				text-align: center;
+			}
+
+			h3 {
+				font-size: 24px;
+				color: #000000;
+			}
+		</style>
+		<!-- 引入swiper插件 -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 		<title></title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui.css" rel="stylesheet" />
 	</head>
-
 	<body>
-		<script src="js/mui.js"></script>
-		<script type="text/javascript">
-			mui.init()
-		</script>
+		<div class="content">
+			<div class="header">
+				<h2>推荐</h2>
+				<a class="search" href="search.html">
+					<input type="text" />
+					<img src="img/ss.png">
+				</a>
+			</div>
+			<h1>Hi上尚若水，今日为你打造</h1>
+			<div class="center">
+				<!-- swiper模板 -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/2.jpg">
+								<b>个性电台</b>
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide" onclick="window.location.href='mrtj.html'">
+							<div class="imgs">
+								<img src="imgs/lol/3.jpg">
+								<b>每日30首</b>
+							</div>
+							<p>每日推荐</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/4.jpg">
+								<b>新歌推荐</b>
+							</div>
+							<p>每周专属新歌</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/5.jpg">
+								<b>个性电台</b>
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/6.jpg">
+								<b>个性电台</b>
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/7.jpg">
+								<b>个性电台</b>
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+					</div>
+				</div>
+				<h3>最近常听</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/8.jpg">
+							</div>
+							<p>飙升榜</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="images/zjl.jpg">
+							</div>
+							<p>最周杰伦</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/10.jpg">
+							</div>
+							<p>热搜榜</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/11.jpg">
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/12.jpg">
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/13.jpg">
+								<b>个性电台</b>
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+					</div>
+				</div>
+				<h3>符合最近收听</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/14.jpg">
+							</div>
+							<p>时光故事汇：回放</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/15.jpg">
+							</div>
+							<p>车载神曲</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/16.jpg">
+							</div>
+							<p>【中文说唱】节奏中</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/17.jpg">
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/18.jpg">
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="imgs">
+								<img src="imgs/lol/19.jpg">
+							</div>
+							<p>根据你的口味定制</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
-
+	<script>
+		/* swiper */
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 3, //设置slider容器能够同时显示的slides数量(carousel模式)
+			spaceBetween: 30, //在slide之间设置距离（单位px）。
+		});
+	</script>
 </html>
